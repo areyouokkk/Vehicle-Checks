@@ -1,0 +1,288 @@
+/* reset default styles */
+body,p,a,ul,li {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+
+}
+li {
+    list-style-type: none;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: rgb(223, 208, 4);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(236, 221, 14);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    /* border: 8px solid black; */
+
+}
+
+
+/* all related to question pages yes and no */
+.main-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* GPT */
+/* .main-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+  } */
+
+
+  /* Container for each check question GPT */
+.container-checks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    max-width: 400px; /* Ensures containers do not stretch beyond this width */
+    padding: 8px;
+    background-color: rgba(184, 228, 184, 0.8); /* Soft green background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+    border-radius: 10px;
+  }
+
+
+/* .container-checks {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    max-height: 400px;
+    max-width: 400px;
+    background-color: rgba(184, 228, 184, 0.603);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+} */
+
+/* Question title and description styling */
+.question-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+
+.question-description {
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+/* Button container to space out yes/no buttons */
+.button-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px; /* Space between buttons */
+    width: 100%;
+  }
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    width: 100px; /* Make buttons the same width */
+  } 
+
+/* Yes button styles */
+.yes-btn {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+.yes-btn:hover {
+    background-color: #45a049;
+  }
+  
+  /* No button styles */
+.no-btn {
+    background-color: #f44336;
+    color: white;
+  }
+
+/* Add hover effect and active state for buttons */
+button:disabled {
+    background-color: #9e9e9e;
+    cursor: not-allowed;
+  }
+  
+.no-btn:hover {
+    background-color: #e53935;
+  }
+
+
+
+/* home page container */
+.main-container-home {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+}
+
+/* home page feature container Body, Interior etc */
+.feature-cont {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 160px;
+    height: 160px;
+    min-width: 150px;
+    min-width: 150px;
+    max-height: 400px;
+    max-width: 400px;
+    background-color: rgba(12, 222, 250, 0.87);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.feature-cont img {
+    max-width: 100px;
+}
+
+
+/* .button-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+} */
+
+.feature-cont p {
+    font-weight: bold;
+    color: white;
+  }
+
+  
+
+/* Styling for the report container */
+.main-container-report {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/* Report container with shadow */
+.main-container-report {
+    max-width: 450px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Title of the report */
+.main-container-report h2 {
+    font-size: 1.6rem;
+    color: #2d6a4f; /* Dark green for the main title */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Report content container */
+#report-content {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Passed percentage container */
+#pass-percentage-container {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #2d6a4f;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Failed categories (bold, red) */
+.category-failed {
+    font-weight: bold;
+    color: #e63946; /* Red for failed categories */
+    padding: 10px 0;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #e63946;
+}
+
+/* Failed checks */
+.failed-checks li {
+    color: #d00000; /* Red for failed checks */
+    font-size: 1rem;
+    padding: 5px 0;
+}
+
+/* The "Check Failed:" label */
+.failed-text {
+    color: #e63946; /* Red color */
+    font-weight: bold;
+}
+
+/* Passed checks (dark green for passed checks) */
+.passed-check {
+    color: #2d6a4f; /* Dark green for passed checks */
+    padding: 5px 0;
+    font-size: 1rem;
+}
+
+
+/* Mobile-first reset button styles */
+#reset-btn {
+    background-color: #ff4c4c; /* Red background */
+    color: white; /* White text */
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    max-width: 250px; /* Prevent it from being too wide */
+    margin: 20px auto;
+}

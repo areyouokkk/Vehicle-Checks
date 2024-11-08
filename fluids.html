@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exterior Checks</title>
+  <link rel="stylesheet" href="mjStyle.css">
+</head>
+<body>
+
+    <header>
+            <nav class="nav-container">
+                <a href="index.html">HOME</a>
+                <h1>Vehicle Inspection 🔍</h1>
+                <a>MENU</a>
+            </nav>
+    </header>
+
+    <div class="main-container">
+
+      <div class="container-checks">
+        <section>
+          <h2 class="question-title">Engine Oil Level</h2>
+          <p class="question-description">The engine oil level is within the minimum and maximum marks on the dipstick.</p>
+          <div class="button-container">
+            <button class="no-btn" data-check="engine-oil-level" data-value="no">No</button>
+            <button class="yes-btn" data-check="engine-oil-level" data-value="yes">Yes</button>
+          </div>
+        </section>
+      </div>
+      
+      <div class="container-checks">
+        <section>
+          <h2 class="question-title">Coolant Level</h2>
+          <p class="question-description">The coolant level is at the correct mark on the reservoir and within the safe range.</p>
+          <div class="button-container">
+            <button class="no-btn" data-check="coolant-level" data-value="no">No</button>
+            <button class="yes-btn" data-check="coolant-level" data-value="yes">Yes</button>
+          </div>
+        </section>
+      </div>
+      
+      <div class="container-checks">
+        <section>
+          <h2 class="question-title">Brake Fluid Level</h2>
+          <p class="question-description">The brake fluid level is between the minimum and maximum lines on the brake fluid reservoir.</p>
+          <div class="button-container">
+            <button class="no-btn" data-check="brake-fluid-level" data-value="no">No</button>
+            <button class="yes-btn" data-check="brake-fluid-level" data-value="yes">Yes</button>
+          </div>
+        </section>
+      </div>
+      
+      <div class="container-checks">
+        <section>
+          <h2 class="question-title">Washer Fluid Level</h2>
+          <p class="question-description">The windshield washer fluid level is adequate for use.</p>
+          <div class="button-container">
+            <button class="no-btn" data-check="washer-fluid-level" data-value="no">No</button>
+            <button class="yes-btn" data-check="washer-fluid-level" data-value="yes">Yes</button>
+          </div>
+        </section>
+      </div>
+      
+      <div class="container-checks">
+        <section>
+          <h2 class="question-title">Power Steering Fluid Level</h2>
+          <p class="question-description">The power steering fluid is at the appropriate level, if the vehicle has a power steering reservoir.</p>
+          <div class="button-container">
+            <button class="no-btn" data-check="power-steering-fluid-level" data-value="no">No</button>
+            <button class="yes-btn" data-check="power-steering-fluid-level" data-value="yes">Yes</button>
+          </div>
+        </section>
+      </div>
+      
+      
+          <!-- Repeat for other checks as needed -->
+          
+    </div>
+
+
+  <script src="app.js"></script>
+</body>
+</html>
+
