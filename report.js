@@ -12,13 +12,12 @@ function generateReport() {
             'underbody', 'trim-mouldings', 'number-plates'
         ],
         "TYRES": [
-            'flat-tyres', 'fog-lights', 'foreign-objects', 'headlights', 
-            'indicator-lights', 'license-plate-lights', 'power-steering-fluid-level', 
-            'reverse-lights', 'side-marker-lights', 'tail-lights', 'tread-depth', 
-            'tyre-age', 'tyre-pressure', 'tyre-valve-condition', 'tyre-wear-pattern'
+            'flat-tyres','foreign-objects', 'tread-depth', 'tyre-age',
+            'tyre-pressure', 'tyre-valve-condition', 'tyre-wear-pattern', 'visible-damage',
+            'cracks-or-dry-rot'
         ],
         "INTERIOR": [
-            'visible-damage', 'washer-fluid-level', 'window-operation', 'steering-tilt-adjustment',
+            'window-operation', 'steering-tilt-adjustment',
             'mirror-adjustment', 'air-conditioning-heating', 'door-locks', 'interior-lights', 
             'seatbelt', 'horn', 'wipers', 'dashboard-warning-lights'
         ],
@@ -28,7 +27,7 @@ function generateReport() {
         ],
         "LIGHTS": [
             'brake-lights', 'drl', 'headlights', 'indicator-lights', 'license-plate-lights', 
-            'reverse-lights', 'side-marker-lights', 'tail-lights'
+            'reverse-lights', 'side-marker-lights', 'tail-lights', 'fog-lights'
         ]
     };
     
